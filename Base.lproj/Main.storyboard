@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water_molecule_by_solictice" id="lRW-ND-4GB">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="zSD-hD-FPk">
+                                <rect key="frame" x="71" y="300" width="233" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="aa_buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzt-l7-Skw"/>
+                                    <segue destination="dKR-cv-FDZ" kind="modal" identifier="aminoAcidSegue" id="1UM-Fc-cDy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Amino Assets" textAlignment="center" minimumFontSize="17" id="2Kx-ru-WZD">
+                                <rect key="frame" x="51" y="85" width="272" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="37"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6zE-j6-akf"/>
+                    <connections>
+                        <outlet property="aa_button" destination="zSD-hD-FPk" id="9g1-LW-I3S"/>
+                        <outlet property="textField" destination="2Kx-ru-WZD" id="PTk-Ni-LwQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657.5" y="41.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="cZk-Vf-1E9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jfj-PO-UQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="dKR-cv-FDZ" customClass="SecondViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ko2-P0-fgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YNH-bY-Ju0">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="CX6-7A-F7F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mtp-C3-t5I">
+                                <rect key="frame" x="137" y="289" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <action selector="chain3Pressed:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="Yww-ir-fFO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IgA-Io-n7q">
+                                <rect key="frame" x="137" y="353" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <action selector="chain4Pressed:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="aTe-Xa-a47"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lC3-A1-1TY">
+                                <rect key="frame" x="137" y="481" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <action selector="chain6Pressed:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="y42-aR-lFy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pjV-XZ-Q79">
+                                <rect key="frame" x="137" y="545" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <action selector="chain7Pressed:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="tjq-cy-27b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NWT-JH-g4N">
+                                <rect key="frame" x="137" y="417" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <action selector="chain5Pressed:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="0vL-O0-5Xi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2016-12-07 at 12.59.09 AM" id="B6l-Y5-lnB">
+                                <rect key="frame" x="53" y="61" width="289" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Glycine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LKX-O0-8eP">
+                                <rect key="frame" x="102" y="18" width="171" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hz3-d7-7Vu">
+                                <rect key="frame" x="16" y="28" width="29" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="blue-arrow-clip-art-vector-NZh9VN-clipart"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="7rT-z6-jRl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4HM-Y5-7wL">
+                                <rect key="frame" x="137" y="162" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <action selector="chain1Pressed:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="RwW-SM-9hG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rIz-is-NSv">
+                                <rect key="frame" x="317" y="22" width="42" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hzd-j4-cAG">
+                                <rect key="frame" x="317" y="569" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="skip:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="WUz-Ad-xZI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NYB-Vk-9ps">
+                                <rect key="frame" x="137" y="226" width="100" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <action selector="chain2Pressed:" destination="dKR-cv-FDZ" eventType="touchUpInside" id="suN-AP-iQQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="amino_acid_name" destination="LKX-O0-8eP" id="bUL-V3-eBt"/>
+                        <outlet property="chain1" destination="4HM-Y5-7wL" id="9Ve-Sd-UHi"/>
+                        <outlet property="chain2" destination="NYB-Vk-9ps" id="t34-wX-ZlX"/>
+                        <outlet property="chain3" destination="Mtp-C3-t5I" id="1SF-hd-PMa"/>
+                        <outlet property="chain4" destination="IgA-Io-n7q" id="bAc-5u-mcM"/>
+                        <outlet property="chain5" destination="NWT-JH-g4N" id="vy8-Js-fvQ"/>
+                        <outlet property="chain6" destination="lC3-A1-1TY" id="j9E-hG-sb7"/>
+                        <outlet property="chain7" destination="pjV-XZ-Q79" id="k7T-FE-fjI"/>
+                        <outlet property="score" destination="rIz-is-NSv" id="cL8-gr-stf"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1147.5" y="41.5"/>
+        </scene>
+        <!--Popup View Controller-->
+        <scene sceneID="HHl-nR-Vd2">
+            <objects>
+                <viewController storyboardIdentifier="PopupID" id="DWH-WN-z79" customClass="PopupViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gw4-jm-Nsn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="qGB-fY-qk0">
+                                <rect key="frame" x="30" y="101" width="314" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jph-Iw-csI">
+                                        <rect key="frame" x="0.0" y="0.0" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CH3"/>
+                                        <connections>
+                                            <action selector="closePopup:" destination="DWH-WN-z79" eventType="touchUpInside" id="o1f-oJ-lR2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BTT-20-nhL">
+                                        <rect key="frame" x="106" y="0.0" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="CH2"/>
+                                        <connections>
+                                            <action selector="closePopup2:" destination="DWH-WN-z79" eventType="touchUpInside" id="fsh-3n-HVO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gfb-Ex-rlH">
+                                        <rect key="frame" x="212" y="0.0" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="COO"/>
+                                        <connections>
+                                            <action selector="closePopup3:" destination="DWH-WN-z79" eventType="touchUpInside" id="O4R-pH-t1s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QC8-RI-F2L">
+                                        <rect key="frame" x="212" y="72" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="NH"/>
+                                        <connections>
+                                            <action selector="closePopup6:" destination="DWH-WN-z79" eventType="touchUpInside" id="sDN-ZF-JH2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xGJ-lM-GRo">
+                                        <rect key="frame" x="106" y="144" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="NH2"/>
+                                        <connections>
+                                            <action selector="closePopup8:" destination="DWH-WN-z79" eventType="touchUpInside" id="eu1-Ec-j0n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SuM-S6-X5d">
+                                        <rect key="frame" x="212" y="144" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="NH3"/>
+                                        <connections>
+                                            <action selector="closePopup9:" destination="DWH-WN-z79" eventType="touchUpInside" id="a0I-Rk-QXV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1PC-FT-gfJ">
+                                        <rect key="frame" x="0.0" y="72" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="OH"/>
+                                        <connections>
+                                            <action selector="closePopup4:" destination="DWH-WN-z79" eventType="touchUpInside" id="0Jm-74-whD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yak-rG-RbZ">
+                                        <rect key="frame" x="106" y="72" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="SH"/>
+                                        <connections>
+                                            <action selector="closePopup5:" destination="DWH-WN-z79" eventType="touchUpInside" id="mmB-pS-FkP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j8w-MX-kGj">
+                                        <rect key="frame" x="0.0" y="144" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="arginine"/>
+                                        <connections>
+                                            <action selector="closePopup7:" destination="DWH-WN-z79" eventType="touchUpInside" id="isx-xN-gbc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qeY-WV-LUs">
+                                        <rect key="frame" x="106" y="216" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="asparagine"/>
+                                        <connections>
+                                            <action selector="closePopup11:" destination="DWH-WN-z79" eventType="touchUpInside" id="ZEH-dl-EJX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zHZ-Ow-8VZ">
+                                        <rect key="frame" x="212" y="216" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="histidine"/>
+                                        <connections>
+                                            <action selector="closePopup12:" destination="DWH-WN-z79" eventType="touchUpInside" id="dO0-p1-TTw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="orh-rR-Z38">
+                                        <rect key="frame" x="0.0" y="216" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="hydrogen"/>
+                                        <connections>
+                                            <action selector="closePopup10:" destination="DWH-WN-z79" eventType="touchUpInside" id="v44-MR-ZyD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7h9-h1-ook">
+                                        <rect key="frame" x="0.0" y="288" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="isoleucine"/>
+                                        <connections>
+                                            <action selector="closePopup13:" destination="DWH-WN-z79" eventType="touchUpInside" id="YDO-Ib-67E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Od4-zd-o1b">
+                                        <rect key="frame" x="106" y="288" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ring"/>
+                                        <connections>
+                                            <action selector="closePopup14:" destination="DWH-WN-z79" eventType="touchUpInside" id="1lD-DJ-2Ux"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W9X-sO-pA7">
+                                        <rect key="frame" x="212" y="288" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="sulfur"/>
+                                        <connections>
+                                            <action selector="closePopup15:" destination="DWH-WN-z79" eventType="touchUpInside" id="jEl-7h-EDI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XWW-Ix-qxy">
+                                        <rect key="frame" x="212" y="360" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="threonine"/>
+                                        <connections>
+                                            <action selector="closePopup18:" destination="DWH-WN-z79" eventType="touchUpInside" id="P8m-ob-rEt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e8L-Y7-6SC">
+                                        <rect key="frame" x="0.0" y="360" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tryptophan"/>
+                                        <connections>
+                                            <action selector="closePopup16:" destination="DWH-WN-z79" eventType="touchUpInside" id="tOi-c4-rjo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dee-8u-AG2">
+                                        <rect key="frame" x="106" y="360" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="valine"/>
+                                        <connections>
+                                            <action selector="closePopup17:" destination="DWH-WN-z79" eventType="touchUpInside" id="qA9-Y9-yCq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yBO-fD-R2g">
+                                        <rect key="frame" x="162" y="431" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="proline"/>
+                                        <connections>
+                                            <action selector="closePopup19:" destination="DWH-WN-z79" eventType="touchUpInside" id="E9p-V9-oTR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nUn-vY-YPo">
+                                        <rect key="frame" x="52" y="431" width="102" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePopup20:" destination="DWH-WN-z79" eventType="touchUpInside" id="AfF-et-cvF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDb-Pv-oEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590.5" y="39.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CH2" width="253" height="164"/>
+        <image name="CH3" width="305" height="168"/>
+        <image name="COO" width="414" height="181"/>
+        <image name="NH" width="282" height="183"/>
+        <image name="NH2" width="664" height="378"/>
+        <image name="NH3" width="180" height="104"/>
+        <image name="OH" width="316" height="203"/>
+        <image name="SH" width="172" height="138"/>
+        <image name="Screen Shot 2016-12-07 at 12.59.09 AM" width="1150" height="388"/>
+        <image name="arginine" width="872" height="378"/>
+        <image name="asparagine" width="479" height="272"/>
+        <image name="blue-arrow-clip-art-vector-NZh9VN-clipart" width="590" height="252"/>
+        <image name="histidine" width="280" height="308"/>
+        <image name="hydrogen" width="484" height="484"/>
+        <image name="isoleucine" width="560" height="207"/>
+        <image name="proline" width="921" height="503"/>
+        <image name="ring" width="384" height="466"/>
+        <image name="sulfur" width="120" height="98"/>
+        <image name="threonine" width="378" height="178"/>
+        <image name="tryptophan" width="1515" height="745"/>
+        <image name="valine" width="582" height="340"/>
+        <image name="water_molecule_by_solictice" width="1280" height="1024"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
